@@ -1,0 +1,56 @@
+.about-card {
+  width: 600px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  margin: 40px auto;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.about-card h2 {
+  color: #007bff;
+  margin-bottom: 5px;
+  font-size: 28px;
+}
+
+.about-card h4 {
+  color: #555;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.about-card p {
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+
+
+
+.center-btn {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 5vh;
+}
+
+.explore-btn {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 5px 10px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.explore-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+    

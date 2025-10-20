@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gwaidho Saluwah Lillian</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+    <title>Gwaidho Saluwah Lillian</title>
+
+   <nav>
+    <div class="log-img">
+    <img src="images/log.png" alt=""height="40px" width="40px">
+    </div>
+
+    <a href="index.html">Home</a>
+    <a href="About Me.html">About Me</a>
+    <a href="Education.html">Education</a>
+    <a href="Skills.html">Skills</a>
+    <a href="Services.html">Services</a>
+    <a href="Contact.html">Contact</a>
+    
+    </nav>
+
+
+    <div class="image-container">
+     <img src="images/img2.jpg" alt="Profile Image" class="circle-img">
+    </div>
+
+
+    <div class="typing-container" id="typing"></div>
+
+
+
+
+
+
+
+
+    <script>
+        const text = "Hi, I'm Gwaidho Saluwah Lillian <br> Passionate and Professional Software Developer <br> Turning ideas into digital solutions";
+        const typingContainer = document.getElementById("typing");
+        let index = 0;
+        let isDeleting = false;
+
+        function type() {
+            if (!isDeleting){
+                typingContainer.innerHTML = text.substring(0, index + 1);
+                index++;
+            
+            if (index === text.length) {
+                isDeleting = true;
+                index++;
+                setTimeout(type, 1000); 
+               return;
+            }
+
+            } else {
+                typingContainer.innerHTML = text.substring(0, index - 1);
+                index--;
+                if (index === 0) {
+                    isDeleting = false;
+                }
+            }
+            setTimeout(type, isDeleting ? 50 : 150);
+        }
+
+        type();
+
+
+
+        
+    </script>
+</body>
+</html>
